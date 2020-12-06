@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #fff">
+<link rel="shortcut icon" href="https://www.freedom-point.com/img/freedompointicon.png">
+<link rel="stylesheet" href="./main.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<meta name="Description" content="BCS Search Beta | The simplified search engine.">
+<title>Freedom Point Wiki</title>
+
+
+
+<!--JazzBlocks required code-->
+<link rel="stylesheet" href="./libraries/textStyles.css">
+<link rel="stylesheet" href="./libraries/buttons.css">
+<link rel="stylesheet" href="./everythingelse.css">
+<link rel="preload" href="./libraries/JazzBlocksFunctions.js" as="script">
+<link rel="preload" href="./libraries/search.css" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./search.css">
+<!--end-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="prefetch" href="https://www.freedom-point.com/img/freedompointicon.png">
+<meta name="keywords" content="wiki, education, politics, encyclopedia">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <a id="top"></a>
+
+</head>
+<header>
+  <a href="#"></a>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <div class="dropdown">
+    <a class="redbutton" style="padding-top: 1.5mm; padding-bottom: 1.5mm;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="./icons/menu.png" alt="" width="30mm" height="30mm">
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="https://www.freedom-point.com/index.html">Home</a>
+      <a class="dropdown-item" href="https://www.freedom-point.com/stream.html">Stream</a>
+      <a class="dropdown-item" href="./contribute.html">Contribute</a>
+      <a class="dropdown-item" href="https://www.freedom-point.com/privacy.html">Privacy</a>
+    </div>
+  </div>
+<div id="menu" >
+
+
+</div>
+
+</header>
+<body style="padding:3mm; background-color: #fff" onload="searching()">
+  <center>
+    <div class="con1" >
+      <p style="padding:0mm;"></p>
+
+      <div >
+        <p style="text-align: center; margin-bottom:1mm;"><a href="https://www.freedom-point.com/wiki/index.html"><img src="https://www.freedom-point.com/img/freedompointicon.png" alt="Freedom Point Logo" width="300mm"></a></p>
+<script src="./search.js" charset="utf-8"></script>
+
+        <center>
+          <h1 hidden>The political wiki.</h1>
+          <h2 hidden>Wiki entries are verified with facts, not opinions.</h2>
+            <!--<p class=pc_m>Hide         <button id="techHide" onclick="techHide()" class="buttonY_green" name="button">Tech</button><button id="softwareButt" onclick="softwareHide()" class="buttonY_green" name="button">Software</button><button id="googleButt" onclick="googleHide()" class="buttonY_green" name="button">Google</button></p>-->
+            <p style="font-size: 3.5mm;">By using this website you approve of the privacy policy.</p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfL-FpGZ7t4wlKToWKDl1gDVtUR3j45m1bvZtxSiSxfAUtBwg/viewform?embedded=true" width="640" height="1450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<!--Like W/ Privacy-->
+
+          </center>
+      <p style="padding:2mm;"></p>
+    </div>
+  </center>
+  <div class="topbutton"><a href="#"  style="visibility: hidden;" id="topbutton"><button type="button" class="redbutton">Top</button></a></div>
+  <!--<li><a href="https://www.squarespace.com/" rel="noreferrer">placeholder.com/ <p name="SEO Content" hidden><p> <p class="pc_s">meta description</p></a></li>-->
+</body>
+<footer style="margin-top: 4mm; bottom: 0px;">
+  <center><p ></p></center>
+</footer>
+
+</div>
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</html>
